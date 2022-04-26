@@ -1,38 +1,445 @@
-.App {
-  text-align: center;
+.container{
+  width: 100%;
+  height: 100%;
+  background: #060724;
 }
-
-.App-logo {
-  height: 40vmin;
+.container .content .flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .flex .col-right{
+  padding: 20px 80px;
+  margin-top: -150px;
+}
+.container .content .img img{
+  width: 80px;
+  margin: 30px 90px 0;
+}
+.container .content .flex .col-right .fields .large_text{
+  font-size: 4em;
+  font-weight: 600;
+  color: #EDECED;
+}
+.container .content .flex .col-right .fields p{
+  font-size: 2.3em;
+  color: #EDECED;
+  margin: 20px 0 0;
+}
+.container .content .flex .col-right .fields .btn_div{
+  margin: 30px 0 0;
+}
+.container .content .flex .col-right .fields .btn_div .button{
+  width: 150px;
+  padding: 13px;
+  background: #EB7F67;
+  text-align: center;
+  border-radius: 5px;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+}
+.container{
+  position: relative;
+}
+.container::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  background: url('source/social\ media.jpg') no-repeat;
+  background-size: cover;
+}
+.container .content .flex .col-left .image img{
+  width: 500px;
+  height: 100%;
+}
+.container .content .nav{
+  position: absolute;
+  right: 90px;
+  top: 30px;
+  width: 100%;
+  max-width: 500px;
+  background: #041548;
+  box-shadow: 0 10px 10px #020d2a;
+  padding: 15px;
+  border-radius: 5px;
+}
+.container .content .nav .list .list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .content .nav .list .list-item p{
+  margin: 0 10px 0;
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.container .content .nav .list .list-item p:hover{
+  color: #EB7F67;
+}
+.aboutUs{
+  width: 100%;
+  height: 100%;
+  background: #EB7F67;
+  padding: 20px 80px;
+}
+.aboutUs .content{
+  display: flex;
+}
+.aboutUs .content .text{
+  font-size: 4em;
+  margin-top: 40px;
+  color: #EDECED;
+  /* white-space: nowrap; */
+}
+.aboutUs .content .pref{
+  font-size: 1.3em;
+  color: #fff;
+  margin-top: 250px;
+  margin-left: -250px;
+  width: 80%;
+}
+.aboutUs .content .grp img{
+  width: 200px;
+}
+.aboutMe{
+  width: 100%;
+  height: 100%;
+  background: #EDECED;
+  padding: 20px 80px;
+  position: relative;
+}
+.aboutMe::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   max-width: 600px;
+   height: 100%;
+   background: url('source/my_portfolio.jpg') no-repeat;
+   background-size: cover;
+}
+.aboutMe .content .abx{
+  display: flex;
+  align-items: center;
+}
+.aboutMe .content .abx .image img{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  user-select: none;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.aboutMe .content .abx .ab_box{
+  margin-left: -100px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.aboutMe .content .abx .ab_box .ab_text{
+  font-size: 6em;
+  color: #060724;
+}
+.aboutMe .content .abx .ab_box .ab_pref p{
+  color: #060724;
+  font-size: 1.1em;
+}
+.aboutMe .content .abx .ab_box .button{
+  margin-top: 20px;
+}
+.aboutMe .content .abx .ab_box .button .btn{
+  width: 100%;
+  max-width: 160px;
+  padding: 14px 20px;
+  background: #EB7F67;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+.offer{
+  width: 100%;
+  height: 100%;
+  padding: 20px 80px;
+  background: #060724;
+}
+.offer .content .header{
+  font-size: 3em;
+  text-transform: uppercase;
+  color: #EDECED;
+  margin: 30px 40px 0;
+}
+.offer .content .box_content{
+  margin: 50px 0 0;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.offer .content .box_content .box{
+  margin: 0 20px 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.offer .content .box_content .box .image{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.offer .content .box_content .box .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.offer .content .box_content .box .image img:hover{
+  transform: scale(1.5);
+}
+.offer .content .box_content .box{
+  position: relative;
+}
+.offer .content .box_content .box .dwn{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  background: rgba(6, 7, 36, 0.651);
+  padding: 20px 20px;
+  border-radius: 10px;
+  user-select: none;
+  pointer-events: none;
+}
+.offer .content .box_content .box .dwn .big{
+  font-size: 2em;
+  color: #EDECED;
+  margin: 20px 0 0;
+}
+.offer .content .box_content .box .dwn .small{
+  color: #EDECED;
+  margin: 10px 0 0;
+}
+.offer .content .box_content .box .dwn .small.last{
+  font-size: 15px;
+}
+.collab{
+  width: 100%;
+  height: 100%;
+  padding: 20px 80px;
+  background: #EB7F67; 
+}
+.collab .content{
+  display: flex;
+  align-items: baseline;
+}
+.collab .content .left .header{
+  font-size: 4em;
+  color: #EDECED;
+}
+.collab .content .right{
+  margin-left: 200px;
+}
+.collab .content .right .ptext{
+  font-size: 1.4em;
+  color: #EDECED;
+}
+.collab .content .right .social{
+  display: flex;
+  align-items: center;
+}
+.collab .content .right .social .social_icon{
+  margin-right: 40px;
+  margin-top: 10px;
+}
+.collab .content .right .social .social_icon i{
+  font-size: 1.7em;
+}
+.collab .content .right .connect{
+  margin: 50px 0 0;
+}
+.collab .content .right .connect .text{
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #EDECED;
+}
+.collab .content .right .connect .email_info,
+.collab .content .right .connect .call_info{
+  color: #EDECED;
+}
+.collab .content .right .connect .call{
+  margin: 40px 0 0;
+}
+footer{
+  width: 100%;
+  text-align: center;
+  background: #020d2a;
+  padding: 10px;
+  color: #fff;
+}
+@media (max-width: 906px){
+  .container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    background: url('source/social\ media.jpg') no-repeat;
+    background-size: cover;
+    display: none;
+  }
+  .container .content .flex .col-left .image img{
+    width: 500px;
+    height: 100%;
+    display: none;
+  }
+  .container .content .flex .col-right{
+    padding: 20px 80px;
+    margin: 0 0 0;
+  }
+  .aboutUs .content{
+    display: block;
+  }
+  .aboutUs .content .text{
+    font-size: 4em;
+    margin-top: 40px;
+    color: #EDECED;
+    /* white-space: nowrap; */
+  }
+  .aboutUs .content .pref{
+    font-size: 1.3em;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .aboutUs .content .grp img {
+    width: 200px;
+    display: none;
+  }
+  .aboutMe{
+    width: 100%;
+    height: 100%;
+    background: #EDECED;
+    padding: 20px 120px;
+    position: relative;
+  }
+  .aboutMe::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    background: url('source/my_portfolio.jpg') no-repeat;
+    background-size: cover;
+    display: none;
+ }
+ .aboutMe .content .abx{
+   display: block;
+   align-items: center;
+ }
+ .aboutMe .content .abx .image img{
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   user-select: none;
+   pointer-events: none;
+   display: none;
+ }
+ .offer .content .box_content{
+  margin: 50px 0 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.offer .content .box_content .box{
+  margin: 0 0 0;
+  width: 350px;
+  height: 100%;
+  padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.offer .content .box_content .box .dwn{
+  position: absolute;
+  bottom: 0;
+  width: 340px;
+  height: 100%;
+  max-height: 300px;
+  background: rgba(6, 7, 36, 0.651);
+  padding: 20px 20px;
+  border-radius: 10px;
+  user-select: none;
+  pointer-events: none;
+}
+.offer .content .box_content .box .image{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.offer .content .box_content .box .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
   }
-  to {
-    transform: rotate(360deg);
+  .collab .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
+  .collab .content .left .header{
+    font-size: 4em;
+    color: #EDECED;
+  }
+  .collab .content .right{
+    margin-left: 0;
+  }
+  
+.offer .content .header {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #EDECED;
+    margin: 0 0 0;
+}
+  .offer .content .box_content .box .dwn .big{
+    font-size: 20px;
+    color: #EDECED;
+    margin: 20px 0 0;
+  }
+  .offer .content .box_content .box .dwn .small{
+    color: #EDECED;
+    margin: 10px 0 0;
+    font-size: 16px;
+  }
+  .offer .content .box_content .box .dwn .small.last{
+    font-size: 13px;
+  }
+  .collab .content .left .header {
+    font-size: 28px;
+    color: #EDECED;
+  }
+  .container .content .flex .col-right .fields .large_text {
+    font-size: 3em;
+    font-weight: 600;
+    color: #EDECED;
+}
 }
