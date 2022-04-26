@@ -322,7 +322,7 @@ const Videos = () => {
     <div className="videos_container">
       <div className="content">
         <div className="header">
-          <h1>CourseArray</h1>
+          <h1>ResFeed</h1>
           <div className="search">
             <input
               type="text"
