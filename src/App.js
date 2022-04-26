@@ -79,7 +79,7 @@ function App() {
               <div className="ab_text">About Me</div>
               <div className="ab_pref">
                 <p>
-                Hello, I'm Treasure, I'm a Web Developer and a Web app Developer I'm skilled in Full Stack Development which means I can handle server-based projects, I'm a student, pursuing my degree. I've been working as a Web Developer with over 3+years of experience. I've worked on many client projects, and some personal projects of my own, Learning is a part of my life and I believe in helping people with my knowledge.
+                Hello, I'm Treasure, I'm a web developer, and a web app developer. I'm a Full Stack Developer. I'm a student, pursuing my degree in CSSE. I've worked as a Web Developer with over 3+years of experience. I've worked on many client projects, and some personal projects of my own, Learning is a part of my life and I believe in helping people with my knowledge.
                 </p>
               </div>
               <div className="button">
